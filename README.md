@@ -21,3 +21,4 @@ Dastur:
 - `%` Qoldiq
 
 ## 💻 Ishlatish
+![Programma ishlashi](/images/gif.gif)
