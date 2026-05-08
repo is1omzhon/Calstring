@@ -9,7 +9,7 @@ do
     {
         case "1":
             {   
-                Console.WriteLine("Bu dastur amallarni bajaradi(1+4-2+2+1) ko'rinishida. \nAgar dasturdan foydalanmoqchi bulsangiz amalni kiriting: ");
+                Console.WriteLine(" \nAmalni kiriting: ");
 
                 string misol = Console.ReadLine();
                 int natija = Convert.ToInt32(misol[0].ToString());
@@ -39,6 +39,12 @@ do
 
                 break;
             }
+        case "2":
+            {
+
+                break;
+            }
+
         default:
             {
                 Console.WriteLine("Bunaqa tanlov mavjud emas!!!");
