@@ -15,37 +15,7 @@ do
             }
         case "2":
             {   
-                Console.WriteLine(" \nAmalni kiriting: ");
-                string ifoda = Console.ReadLine();
-
-                int result = 0;
-                int num = 0;
-                char operation = '+';
-                int indeks = 0;
-
-                while (indeks < ifoda.Length)
-                {
-                    char amalNumOper = ifoda[indeks];
-
-                    if (amalNumOper >= '0' && amalNumOper <= '9')
-                    {
-                        num = num * 10 + (amalNumOper - '0');
-                    }
-
-                    if (amalNumOper  == '+' || amalNumOper == '-' || indeks == ifoda.Length - 1)
-                    {
-                        if (operation == '+') 
-                            result+=num;
-                        else if (operation == '-') 
-                            result-=num;
-
-                        operation = amalNumOper;
-                        num = 0;
-                    }
-                    indeks++;
-                }
-
-                Console.WriteLine($"Natija : {result}");
+                OperationInNumbers();
                 break;
             }
 
@@ -88,6 +58,40 @@ do
                 Console.WriteLine("Natija: " + natija);
     }
 
+    static void OperationInNumbers()
+    {
+         Console.WriteLine(" \nAmalni kiriting: ");
+                string ifoda = Console.ReadLine();
+
+                int result = 0;
+                int num = 0;
+                char operation = '+';
+                int indeks = 0;
+
+                while (indeks < ifoda.Length)
+                {
+                    char amalNumOper = ifoda[indeks];
+
+                    if (amalNumOper >= '0' && amalNumOper <= '9')
+                    {
+                        num = num * 10 + (amalNumOper - '0');
+                    }
+
+                    if (amalNumOper  == '+' || amalNumOper == '-' || indeks == ifoda.Length - 1)
+                    {
+                        if (operation == '+') 
+                            result+=num;
+                        else if (operation == '-') 
+                            result-=num;
+
+                        operation = amalNumOper;
+                        num = 0;
+                    }
+                    indeks++;
+                }
+
+                Console.WriteLine($"Natija : {result}");
+    }
 
     Console.WriteLine("Dasturni davom ettirishni xoxlaysizmi: ha/yoq");
     userChoice = Console.ReadLine();
