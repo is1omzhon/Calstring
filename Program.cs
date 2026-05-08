@@ -5,42 +5,19 @@ do
     Console.WriteLine("Bizning Calstring dasturimizga xush kelibsiz. \nDasturdan foydalanish uchun menyudan birini tanleng. \n\t1. Bir xonali sonlar qushuv, ayiruv \n\t2. Istalgan xonali sonlar ustida amallar \n\t3.Advanced(optional) qavs va kupaytish");
     string userInputCase = Console.ReadLine();
 
-    Console.WriteLine(" \nAmalni kiriting: ");
-    string ifoda = Console.ReadLine();
 
     switch (userInputCase)
     {
         case "1":
-            {   
-                int natija = Convert.ToInt32(ifoda[0].ToString());
-                int i = 1;
-
-                while (i < ifoda.Length)
-                {
-                    char amal = ifoda[i];
-                    int num = Convert.ToInt32(ifoda[i + 1].ToString());
-                    
-                    switch (amal)
-                    {
-                        case '+':
-                            natija = natija + num;
-                            break;
-                        case '-':
-                            natija = natija - num;
-                            break;
-                        default:
-                            Console.WriteLine($"Xato: '{amal}' amali mavjud emas!");
-                            return;
-                    }
-                    
-                    i += 2;
-                }
-                Console.WriteLine("Natija: " + natija);
-
+            {  
+                OperationInNum1();
                 break;
             }
         case "2":
-            {
+            {   
+                Console.WriteLine(" \nAmalni kiriting: ");
+                string ifoda = Console.ReadLine();
+
                 int result = 0;
                 int num = 0;
                 char operation = '+';
@@ -78,6 +55,37 @@ do
                 break;
             }
         
+    }
+
+    static void OperationInNum1()
+    {
+         Console.WriteLine(" \nAmalni kiriting: ");
+        string ifoda = Console.ReadLine();
+
+        int natija = Convert.ToInt32(ifoda[0].ToString());
+                int i = 1;
+
+                while (i < ifoda.Length)
+                {
+                    char amal = ifoda[i];
+                    int num = Convert.ToInt32(ifoda[i + 1].ToString());
+                    
+                    switch (amal)
+                    {
+                        case '+':
+                            natija = natija + num;
+                            break;
+                        case '-':
+                            natija = natija - num;
+                            break;
+                        default:
+                            Console.WriteLine($"Xato: '{amal}' amali mavjud emas!");
+                            return;
+                    }
+                    
+                    i += 2;
+                }
+                Console.WriteLine("Natija: " + natija);
     }
 
 
