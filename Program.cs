@@ -5,20 +5,20 @@ do
     Console.WriteLine("Bizning Calstring dasturimizga xush kelibsiz. \nDasturdan foydalanish uchun menyudan birini tanleng. \n\t1. Bir xonali sonlar qushuv, ayiruv \n\t2. Istalgan xonali sonlar ustida amallar \n\t3.Advanced(optional) qavs va kupaytish");
     string userInputCase = Console.ReadLine();
 
+    Console.WriteLine(" \nAmalni kiriting: ");
+    string ifoda = Console.ReadLine();
+
     switch (userInputCase)
     {
         case "1":
             {   
-                Console.WriteLine(" \nAmalni kiriting: ");
-
-                string misol = Console.ReadLine();
-                int natija = Convert.ToInt32(misol[0].ToString());
+                int natija = Convert.ToInt32(ifoda[0].ToString());
                 int i = 1;
 
-                while (i < misol.Length)
+                while (i < ifoda.Length)
                 {
-                    char amal = misol[i];
-                    int num = Convert.ToInt32(misol[i + 1].ToString());
+                    char amal = ifoda[i];
+                    int num = Convert.ToInt32(ifoda[i + 1].ToString());
                     
                     switch (amal)
                     {
@@ -41,7 +41,34 @@ do
             }
         case "2":
             {
+                int result = 0;
+                int num = 0;
+                char operation = '+';
+                int indeks = 0;
 
+                while (indeks < ifoda.Length)
+                {
+                    char amalNumOper = ifoda[indeks];
+
+                    if (amalNumOper >= '0' && amalNumOper <= '9')
+                    {
+                        num = num * 10 + (amalNumOper - '0');
+                    }
+
+                    if (amalNumOper  == '+' || amalNumOper == '-' || indeks == ifoda.Length - 1)
+                    {
+                        if (operation == '+') 
+                            result+=num;
+                        else if (operation == '-') 
+                            result-=num;
+
+                        operation = amalNumOper;
+                        num = 0;
+                    }
+                    indeks++;
+                }
+
+                
                 break;
             }
 
