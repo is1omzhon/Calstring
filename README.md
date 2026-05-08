@@ -21,4 +21,9 @@ Dastur:
 - `%` Qoldiq
 
 ## 💻 Ishlatish
-![Programma ishlashi](/images/gif.gif)
+### 1. Bir xonali sonlar qushuv, ayiruv 
+![Programma ishlashi](/images/1xonali.gif)
+
+### 2. Istalgan xonali sonlar ustida amallar 
+![Programma ishlashi](/images/2istalganXonali.gif)
+
