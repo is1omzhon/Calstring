@@ -1,4 +1,6 @@
-﻿while (true)
+﻿string userChoice = string.Empty;
+
+do
 {
     Console.WriteLine("Bu dastur amallarni bajaradi(1+4-2+2+1) ko'rinishida. \nAgar dasturdan foydalanmoqchi bulsangiz amalni kiriting: ");
 
@@ -29,9 +31,7 @@
     Console.WriteLine("Natija: " + natija);
 
     Console.WriteLine("Dasturni davom ettirishni xoxlaysizmi: ha/yoq");
-    string userChoice = Console.ReadLine();
+    userChoice = Console.ReadLine();
 
-    if (userChoice.ToLower() != "ha")
-        break;
 
-}
+}while(userChoice.ToLower() == "ha");
