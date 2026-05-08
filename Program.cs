@@ -2,6 +2,7 @@
 
 do
 {
+    Console.WriteLine("Bizning Calstring dasturimizga xush kelibsiz. \nDasturdan foydalanish uchun menyudan birini tanleng. \n\t1. Bir xonali sonlar qushuv, ayiruv \n\t2. Istalgan xonali sonlar ustida amallar \n\t3.Advanced(optional) qavs va kupaytish");
     Console.WriteLine("Bu dastur amallarni bajaradi(1+4-2+2+1) ko'rinishida. \nAgar dasturdan foydalanmoqchi bulsangiz amalni kiriting: ");
 
     string misol = Console.ReadLine();
