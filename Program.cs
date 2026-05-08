@@ -68,7 +68,7 @@ do
                     indeks++;
                 }
 
-                
+                Console.WriteLine($"Natija : {result}");
                 break;
             }
 

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Calstirng")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65344637e7d77ff75ec5250c1f2e90b2136507e3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dabf139b84a57f11ece834ab3384742f874290b5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Calstirng")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Calstirng")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
